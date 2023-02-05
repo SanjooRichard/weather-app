@@ -1,0 +1,219 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+.flexTable {
+  width: 80%!important;
+  padding-bottom: 27px;
+}
+
+.flexcontainer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 18px;
+}
+
+.arrows {
+  width: 42px;
+  cursor: pointer;
+}
+
+.cover {
+  position: relative;
+  display: flex;
+  height: 225px;
+  padding-top: 18px;
+}
+.left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-left: 14px;
+}
+.right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-right: 14px;
+}
+
+.scroll-images {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-images::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #aaa;
+}
+
+.scroll-images::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.child {
+  width: 120px;
+  margin: 1px 10px;
+  /* overflow: hidden; */
+}
+
+@media screen and (max-width:767px) {
+  .App {
+    text-align: center;
+    display: grid;
+  }
+}
+
+.weatherIcon {
+  width: 85px;
+}
+
+.hourHeading {
+  margin-bottom: 7px;
+}
+
+.hourTable td {
+  font-weight: 500;
+}
+
+.hourTable {
+  padding-bottom: 27px;
+}
+
+.searchButton {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px solid cornflowerblue;
+  padding: 10px;
+  background: cornflowerblue;
+  color: white;
+  font-size: large;
+}
+
+.tempDetails {
+  display: flex;
+  margin-top: -18px;
+  justify-content: space-around;
+}
+
+.tempDetails-c1 {
+  display: inline-flex;
+}
+
+.tempDetails-c2 {
+  display: block;
+}
+
+.maxMinDetails {
+  align-self: center;
+}
+
+.searchButton:hover {
+  cursor: pointer;
+  background: #2b59ac;
+}
+
+td>* {
+  vertical-align: middle;
+}
+
+.searchElements {
+  padding-top: 5%;
+  display: inline-flex;
+  width: 65%;
+}
+
+table {
+  margin: 0 auto;
+  text-align: left;
+}
+
+strong {
+  font-size: large;
+}
+
+.searchInput {
+  padding: 8px;
+  outline: none;
+  font-size: large;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: 82%;
+}
+
+.searchInput:focus-visible,
+.searchInput:hover {
+  outline: 1px solid cornflowerblue;
+}
+
+.Yesterday {
+  min-width: 33%;
+  background: lightblue;
+}
+
+.Today {
+  min-width: 34%;
+  box-shadow: 0px 0px 25px rgb(0 0 0 / 75%);
+  background: lightskyblue;
+}
+
+.Tomorrow {
+  min-width: 33%;
+  background: lightcyan;
+  box-shadow: inset 13px 0px 10px rgb(0 0 0 / 25%);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
